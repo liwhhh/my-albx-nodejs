@@ -22,5 +22,12 @@ module.exports = {
         res.send({ code: 400, msg: '邮箱有误' });
       }
     })
+  },
+
+
+
+
+  getusersPage(req, res) {//admin的用户users页
+    res.render('admin/users');
   }
 }
