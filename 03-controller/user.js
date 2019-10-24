@@ -11,6 +11,9 @@ module.exports = {
     userModel.getUserEmail(email, r => {
       if (r) {
         if (r.password === password) {//数据库密码==用户输入的密码
+
+          req.session.isLogin = true;//记录一下,确实登录成功了
+
           res.send({code:200,msg:'登录成功'})
         } else {
           res.send({ code: 400, msg: '密码有误' });
