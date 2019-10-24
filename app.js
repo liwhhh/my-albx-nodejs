@@ -2,6 +2,7 @@ const express = require('express');//服务器第三方模块
 const bodyParser = require('body-parser');//post
 const session = require('express-session');//session
 const userRouer = require('./02-router/user.js');
+const indexRouter = require('./02-router/index.js');
 
 const app = express();
 app.listen(8080, () => {//监听
@@ -22,4 +23,4 @@ app.set('view engine', 'ejs');//设置ejs为默认的模板引擎
 
 //注册多个路由
 app.use('/admin/user', userRouer);//login页
-// app.use('/admin', indexRouter);//index主页
+app.use('/admin', indexRouter);//index主页
