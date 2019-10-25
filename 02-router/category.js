@@ -7,4 +7,7 @@ router.get('/category.html', categoryController.getCategoryPage);
 
 router.get('/post-add.html', categoryController.getPostAddPage);
 
+//1.获取分类目录数据
+router.get('/getAllCategory', categoryController.getAllCategory);
+
 module.exports = router;//nodejs语法暴露

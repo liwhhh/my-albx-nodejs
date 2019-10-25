@@ -18,7 +18,7 @@ app.use('/assets', express.static('assets'));
 //注册body-parser的中间件
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(session({//注册session中间件
-  secret: "ag",
+  secret: "albx",
   resave: false,
   saveUninitialized: false
 }));
