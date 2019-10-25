@@ -1,10 +1,4 @@
-const mysql = require('mysql');
-const connection = mysql.createConnection({
-  host: '127.0.0.1',
-  user: 'root',
-  password: 'root',
-  database: 'albx_38'
-});
+const { connection } = require('./sqlhelper.js');
 
 module.exports = {
   //1.查询所有分类目录数据-返回给浏览器
