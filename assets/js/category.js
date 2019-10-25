@@ -9,3 +9,8 @@
       }
     }
   });
+
+  //1.切换显示隐藏
+$('.form-group > .Boxfont').on('click', function () {
+  $('.Boxfont > .right').toggle();//切换显示隐藏
+})

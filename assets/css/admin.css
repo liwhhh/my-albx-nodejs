@@ -350,3 +350,35 @@ body {
   border-radius: 50%;
   box-shadow: 0 1px 5px #ccc;
 }
+
+/* 分类目录加样式 */
+.Boxfont .coentFont>.fa{
+   width: 40px;
+   height: 40px;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+   line-height: 40px;
+   text-align: center;
+}
+.form-group > .Boxfont{
+  position: relative;
+}
+.right{
+  position: absolute;
+  float: left;
+  left: 70px;
+  top:0;
+  line-height: 40px;
+  padding: 0 6px;
+  border: 1px solid #ccc;
+  font-size: 20px;
+  display: none;
+}
+.right>.fa{
+  padding: 3px;
+}
+.right>.fa:hover{
+  background: #a9b0c2;
+
+}
+
